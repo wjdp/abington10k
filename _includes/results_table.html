@@ -1,0 +1,13 @@
+{% assign a = "the quick brown fox." %}
+{{ a | capitalize }}
+
+<table class="results">
+{% for result in results %}
+<tr>
+  <td>{{ result.place }}</td>
+  <td>{{ result.first | capitalize }} {{ result.last | capitalize }}</td>
+  <td>{{ result.club | downcase | capitalize }}</td>
+  <td>{{ result.time }}</td>
+</tr>
+{% endfor %}
+</table>
