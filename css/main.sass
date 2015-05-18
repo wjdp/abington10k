@@ -1,0 +1,53 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8"
+
+
+
+// Our variables
+$body-font-stack: 'Arimo', sans-serif
+$header-font-stack: 'Montserrat', sans-serif
+$special-font-stack: 'Roboto', sans-serif
+$base-font-size:   18px
+$base-font-size-compact:   12px
+$small-font-size:  $base-font-size * 0.875
+$base-line-height: 1.5
+$baseline: $base-line-height * $base-font-size
+
+$spacing-unit:     30px
+
+$color-text-heading: #555
+$color-text-black: #111
+$color-text-white: #f1f1f1
+$color-text: $color-text-black
+$color-link: blue
+$color-link-visited: darken($color-link, 20%)
+
+$color-background: #fdfdfd
+$color-background-alt: #111
+$brand-color:      #cc1213
+$color-brand:      #cc1213
+
+
+$color-selection: lighten($brand-color, 20%)
+$color-text-selection: mix($color-selection, $color-text-white, 8%)
+
+$color-grey:       #828282
+$color-grey-light: lighten($color-grey, 40%)
+$color-grey-dark:  darken($color-grey, 25%)
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "bourbon/app/assets/stylesheets/bourbon"
+@import "fgrid/fgrid"
+
+@import "type"
+@import "layout"
+
+@import "header"
+@import "nav"
+@import "footer"
+@import "map"
+@import "records"
+@import "sponsors"

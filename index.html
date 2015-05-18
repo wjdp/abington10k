@@ -1,1 +1,19 @@
-<h1>Abington 10K</h1>
+---
+layout: default
+---
+{% assign home_sections = site.pages | where: "group", "home" | sort: "sort" %}
+
+
+<div class="page">
+
+{% for section in home_sections %}
+
+<section id="{{section.title | slugify }}" class="single-page-section">
+  {% capture section_content %}{% include_relative {{section.path}} %}{% endcapture %}
+  {{ section_content | markdownify | remove: "title:"}}
+</section>
+
+
+{% endfor %}
+
+</div>

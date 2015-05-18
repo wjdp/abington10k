@@ -1,0 +1,47 @@
+.site-header
+  min-height: $baseline * 14
+  background: $color-grey url('/images/banner-sized.jpg') 30% 35% // side-side, up-down
+  position: relative
+
+  @include respond-down(mob-land)
+    margin-bottom: 0 !important
+
+a.site-title
+  display: block
+  color: $color-brand
+  margin-top: $baseline
+  @include respond-down(mob-land)
+    text-align: center
+
+.site-logo
+  width: 200px
+
+.site-header
+  .dates
+    width: 460px
+    @include respond-down(mob-land)
+      width: 100%
+    padding: $baseline / 2
+    padding-right: $baseline
+    float: right
+    background: rgba($color-brand,0.8)
+
+    margin-top: $baseline * 6
+    margin-bottom: $baseline
+
+    p
+      font-family: $special-font-stack
+      color: $color-text-white
+      // @include text-shadow-effect($color-text-white)
+      text-align: right
+
+      margin-bottom: $baseline / 2
+      font-weight: 300
+      .date
+        padding-left: $base-font-size / 2
+        font-size: $base-font-size * 2
+        font-weight: 100
+
+// .menu-icon
+//   @include respond-up(tab-port)
+//     display: none

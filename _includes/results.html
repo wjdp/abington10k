@@ -1,0 +1,7 @@
+<div class="results">
+{% for result in results %}
+{{result}}
+<h2>#{{ result.place }} {{ result.first | capitalize }} {{ result.last | capitalize }}</h2>
+<p> {{ result.time|date: "%H:%M:%S" }}</p>
+{% endfor %}
+</div>

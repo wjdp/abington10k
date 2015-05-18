@@ -1,0 +1,244 @@
+*
+  font-family: $body-font-stack
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+
+::selection
+  background: $color-selection
+  color: $color-text-selection
+
+body
+  color: $color-text
+
+@mixin block($margin: $baseline)
+  // Element is a block, should have suitable bottom margin
+  @include all-but-last(margin-bottom, $margin)
+
+h1, h2, h3, h4, h5, h6, p, li, th, td
+  // Test this, make red or something and check whole site for
+  // non-selected elements.
+  &:last-child
+    // Remove bottom margins if element is last in it's container.
+    // The container should set it's own padding for this.
+    margin-bottom: 0
+
+h1, h2, h3, h4, h5, h6
+  font-family: $header-font-stack
+  color: $color-text-heading
+  @include block
+
+.h1-baseline
+  line-height: $baseline * 3
+.h2-baseline
+  line-height: $baseline * 2
+.h3-baseline
+  line-height: $baseline
+.h4-baseline
+  line-height: $baseline
+.h5-baseline
+  line-height: $baseline
+.h6-baseline
+  line-height: $baseline
+
+h1
+  @extend .h1-baseline
+  font-size: $base-font-size * 2.9
+  @include respond-down(mob-port)
+    font-size: $base-font-size * 2.4
+h2
+  @extend .h2-baseline
+  font-size: $base-font-size * 2.2
+h3
+  @extend .h3-baseline
+  font-size: $base-font-size * 1.8
+h4
+  @extend .h4-baseline
+  font-size: $base-font-size * 1.4
+h5
+  @extend .h5-baseline
+  font-size: $base-font-size
+h6
+  @extend .h6-baseline
+  font-size: $base-font-size * 0.8
+
+h2, .h2-baseline
+  line-height: $baseline * 2
+
+h4.h3-baseline
+  // If h3 is going to sit across from an h4 we can force double line-height
+  // line-height: $baseline * 2
+
+
+@mixin normal-text-nobr
+  line-height: $baseline
+  font-size: $base-font-size
+  margin-bottom: 0
+
+@mixin normal-text
+  @include normal-text-nobr
+  @include block
+
+@mixin compact-text-nobr
+  line-height: $baseline / 2
+  font-size: $base-font-size-compact
+  margin-bottom: 0
+
+@mixin compact-text
+  @include compact-text-nobr
+  @include block($baseline / 2)
+
+p
+  @include normal-text
+
+.compact
+  @include compact-text
+
+.aside
+  @include compact-text
+  font-style: italic
+  color: $color-grey
+
+// Bigger versions of stuff
+h1.display, .display h1
+  @include respond-up(mob-port)
+    font-size: 76px
+  @include respond-up(tab-port)
+    font-size: 96px
+
+p.display, .display p
+  @include respond-up(mob-port)
+    // No change
+  @include respond-up(tab-port)
+    font-size: $base-font-size * 1.8
+    line-height: $baseline * 2
+
+.nobr
+  // No break
+  margin-bottom: 0
+
+p + h1, p + h2, p + h3
+  // Big headings after paragraphs
+  margin-top: $baseline * 2
+p + h4, p + h5, p + h6
+  // Small headings after paragraphs, padding is just what p has for margin-bottom
+
+@mixin header-top-nobr
+  p + h1, p + h2, p + h3
+    // Big headings after paragraphs
+    margin-top: 0
+  p + h4, p + h5, p + h6
+    // Small headings after paragraphs, padding is just what p has for margin-bottom
+
+strong
+  font-weight: 600
+
+// We use a:link to avoid selecting <a> tags that don't have the href attribute
+a:link
+  color: $color-link
+  font-weight: 600
+  text-decoration: none
+
+a:visited
+  color: $color-link-visited
+.content a:hover
+  text-decoration: underline
+  // Content link hover effect
+  // background: $color-link-highlight
+
+@mixin anti-content-a-hover
+  background: inherit
+  margin: inherit
+  padding: inherit
+
+a.pagelink
+  &:before
+    // content: "› "
+  &:after
+    content: "…"
+
+.bracketed
+  color: $color-grey
+
+// ul.formatted li, ol.formatted li
+//   font-size: $base-font-size
+//   margin-bottom: $baseline / 2
+
+// ul.formatted
+//   li
+//     list-style: square
+//   &.minimal li
+//     list-style: none
+
+// ol.formatted
+//   li
+//     list-style: decimal
+//   &.minimal li
+//     list-style: none
+
+ul, ol
+  @include block
+  margin-left: $baseline
+  li
+    padding-bottom: $baseline
+  &.minimal
+    margin-left: 0
+  h3, h4, h5, h6
+    font-weight: bold
+
+ul
+  list-style: square
+
+@mixin list-unformatted
+  margin-left: 0
+  li
+    padding-bottom: 0
+  list-style: none
+
+blockquote
+  @include block
+  $bord: 4px
+  border-left: $bord solid $color-grey
+  padding-left: $bord * 4
+  margin-left: 3em
+  margin-right: 3em
+
+  font-style: italic
+
+pre
+  @include block
+
+@mixin font-monospace
+  font-family: monospace
+
+code
+  // Monospace :)
+  &, *
+    // Override the body font stack
+    @include font-monospace
+  background: $color-background-alt
+  padding: 2px 3px
+  white-space: pre-wrap
+  word-wrap: break-word
+
+div.highlight
+  background: $color-background-alt
+  color: $color-text-white
+  padding: $base-font-size / 2
+  // Make jekyll highlight a block
+  @include block
+  pre
+    white-space: pre-wrap
+    margin-bottom: 0 // Pre is block
+  code
+    background: none
+
+dl
+  dt
+    font-weight: bold
+  dd
+    margin-bottom: $baseline / 2
+
+@mixin text-shadow-effect($background, $pc: 20%, $offset: -1px)
+  text-shadow: 0 $offset 0 darken($background, $pc)
+
+@mixin text-shadow-effect-big($background)
+  @include text-shadow-effect($background, 15%, -2px)

@@ -1,0 +1,23 @@
+.site-nav
+  font-family: $special-font-stack
+  background: $color-brand
+  width: 100%
+  .page-link
+    display: block
+    float: left
+    padding: $baseline
+    @include all-but-last(border-right, 1px solid darken($color-brand, 10%))
+    color: $color-text-white
+
+    @include transition(background 0.1s ease-out)
+
+    &:hover
+      background: lighten($color-brand, 7%)
+  .nav-active
+    background: lighten($color-brand, 5%)
+
+.site-nav-fixed
+  @include respond-up(tab-port)
+    position: fixed
+    top: 0
+    z-index: 999

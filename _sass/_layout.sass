@@ -1,0 +1,93 @@
+*, *:before, *:after
+  margin: 0
+  padding: 0
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+html
+  overflow-y: scroll
+
+html
+
+body
+  height: 100%
+
+body
+  background: $color-background
+
+.wrapper
+  @include grid-wrap
+
+.row
+  @include grid-row
+
+.page
+  margin-top: $baseline
+  padding-bottom: $baseline
+
+.background-overlay
+  position: absolute
+  top: 0
+  width: 100%
+  height: 220px
+  @include background-image(linear-gradient($color-background-alt 0, transparent 99%))
+
+.content
+  min-height: 600px
+
+
+.left
+  float: left
+  padding: 0 32px 32px 0
+
+.right
+  float: right
+  padding: 0 32px 0 32px
+
+@mixin unformatted-list
+  list-style: none
+  padding: 0
+  margin-left: 0
+
+@mixin thin-wrap
+  @include respond-up(mob-port)
+    padding-left: $grid-mob-port-pad
+    padding-right: $grid-mob-port-pad
+  @include respond-up(mob-land)
+    padding-left: $grid-mob-land-pad
+    padding-right: $grid-mob-land-pad
+  @include respond-up(tab-port)
+    padding-left: $grid-tab-port-pad * 4
+    padding-right: $grid-tab-port-pad * 4
+  @include respond-up(tab-land)
+    padding-left: $grid-tab-land-pad * 2.5
+    padding-right: $grid-tab-land-pad * 2.5
+  @include respond-up(med-desk)
+    padding-left: $grid-med-desk-pad * 2
+    padding-right: $grid-med-desk-pad * 2
+  @include respond-up(widescreen)
+    padding-left: $grid-widescreen-pad * 1.5
+    padding-right: $grid-widescreen-pad * 1.5
+    max-width: $grid-max-width
+
+.thin-wrap
+  @include thin-wrap
+
+.block
+  padding-bottom: $baseline
+
+.icon svg
+  height: $base-font-size
+
+section
+  margin-bottom: 100px
+
+img
+  max-width: 100%
+
+// HACK: Hide YAML frontmatter
+section > hr
+  display: none
+  & + p
+    display: none

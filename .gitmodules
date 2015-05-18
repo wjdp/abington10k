@@ -1,0 +1,9 @@
+[submodule "js/chart.js"]
+	path = js/chart.js
+	url = git@github.com:nnnick/Chart.js.git
+[submodule "_sass/bourbon"]
+	path = _sass/bourbon
+	url = git@github.com:thoughtbot/bourbon.git
+[submodule "_sass/fgrid"]
+	path = _sass/fgrid
+	url = git@github.com:fullaf/fgrid

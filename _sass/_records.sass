@@ -1,0 +1,41 @@
+.record-container
+  @include block
+  @include grid-row
+
+.record-single
+  @include grid-x-percent(50%)
+  .record-title
+    background: $color-text-black
+    color: $color-text-white
+    padding-left: 6px
+    font-size: $base-font-size * 0.9
+    text-transform: uppercase
+    font-weight: bold
+    margin-bottom: 0
+  .record-name
+    font-family: $header-font-stack
+    line-height: $baseline * 3
+    font-size: $base-font-size * 3
+    color: $color-brand
+    font-weight: bold
+    margin-bottom: 0
+
+  .record-info
+    @include grid-row
+
+  .record-time
+    @include grid-x-percent(50%)
+
+    font-family: $special-font-stack
+    line-height: $baseline * 3
+    font-size: $base-font-size * 4
+
+    font-weight: 100
+
+  .record-info-aside
+    @include grid-x-percent(50%)
+
+  .record-club
+    margin-top: $baseline / 2.5
+    margin-bottom: 0
+  .record-year

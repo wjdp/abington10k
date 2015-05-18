@@ -1,0 +1,14 @@
+.sponsor-list
+  @include unformatted-list
+  @include grid-row
+  .sponsor-single
+    @include grid-x-percent(33.3333333333%)
+
+    .inner
+      // background: #C4F6A8
+      padding: $baseline
+      margin-bottom: $baseline
+      text-align: center
+
+    &:nth-child(3n+1)
+      clear: left
