@@ -1,10 +1,10 @@
-- sponsor: Anagram
-  logo: anagram.gif
-  link: http://anagram.biz
-
 - sponsor: Cheffins
   logo: cheffins.gif
   link: http://cheffins.co.uk
+
+- sponsor: Anagram
+  logo: anagram.gif
+  link: http://anagram.biz
 
 - sponsor: Acorn Garage
 
@@ -13,6 +13,7 @@
   link: http://www.cambridge-water.co.uk/
 
 - sponsor: FAST Sports Massage
+  link: http://www.fitagainsportstherapy.com
 
 - sponsor: GetFruity
   logo: getfruity.png
