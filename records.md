@@ -6,6 +6,8 @@ sort: 50
 
 ## Course Records
 
+Records for 2013-14 10K and Fun Runs to be added shortly.
+
 <div class="record-container">
 
 {% for record in site.data.records %}
