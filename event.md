@@ -7,4 +7,15 @@ published: true
 ---
 
 
+
 Event details
+
+The Abington 10k and Fun Run is a yearly running event in aid of Great Abington Primary School.
+
+The Start and the Finish take place in the grounds of Granta Park, it is easy accessible and there is plenty of parking.
+
+The 10k route takes you around the picturesque villages of Little and Great Abington. There will be two water stations along the route. The 2k route is within the grounds of Granta Park, totally traffic free. 
+
+This year's race will be the 11th Abington 10k & Fun Run.
+
+## **We are introducing chip timing!**
