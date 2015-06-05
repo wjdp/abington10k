@@ -1,8 +1,13 @@
-.race-map
-  width: 100%
-  @include respond-up(mob-port)
-    height: 300px
-  @include respond-up(tab-port)
-    height: 460px
-  @include respond-up(med-desk)
-    height: 550px
+.maps
+  @include grid-row
+  iframe
+    width: 100%
+    @include respond-up(mob-port)
+      height: 300px
+    @include respond-up(tab-port)
+      height: 460px
+    @include respond-up(med-desk)
+      height: 550px
+
+.map-10k, .map-2k
+  @include grid-x-percent(50%)
