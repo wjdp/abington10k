@@ -1,14 +1,17 @@
 .site-footer
   background: $color-brand-alt
-  padding: $baseline*2 0 $baseline*4 0
+  padding: $baseline*2 0 $baseline*2 0
 
 .footer-links
+  @include grid-row
+  @include block
   text-align: center
 
 .footer-link
-  @include all-but-last(margin-right, $baseline)
+  @include grid-x-percent(33.3333%)
+
   font-family: $special-font-stack
-  font-size: $base-font-size * 1.2
+  font-size: $base-font-size * 1
   margin-bottom: $baseline
   line-height: $base-font-size * 2
   display: inline-block
@@ -35,3 +38,23 @@
 
 .footer-facebook
   background: #4d69a2
+
+.footer-logos
+  @include grid-row
+  @include block
+
+  .footer-logo
+    @include grid-x-percent(33.3333%)
+
+    text-align: center
+
+    img
+      max-width: 150px
+      margin-bottom: $baseline / 2
+
+    p
+      font-size: $base-font-size * 0.8
+
+.footer-credits
+  margin-top: $baseline * 3
+  text-align: right
