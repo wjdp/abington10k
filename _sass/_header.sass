@@ -7,11 +7,31 @@
     margin-bottom: 0 !important
 
 a.site-title
+  float: left
+
+  max-width: 200px
   display: block
   color: $color-brand
   margin-top: $baseline
+  img
+    width: 100%
   @include respond-down(mob-land)
     text-align: center
+
+a.site-sponsor
+  float: right
+  display: block
+  background: #fff
+  max-width: 240px
+  padding: $baseline / 2 $baseline
+
+  p
+    margin-bottom: $baseline / 2
+    text-align: center
+    color: darken(#4e2683, 10%)
+    font-size: $base-font-size * 0.8
+    text-transform: uppercase
+    opacity: 0.2
 
 .site-licence
   position: absolute
@@ -29,6 +49,7 @@ a.site-title
 
 .site-header
   .dates
+    clear: both
     width: 460px
     @include respond-down(mob-land)
       width: 100%
@@ -37,7 +58,7 @@ a.site-title
     float: right
     background: rgba($color-brand,0.8)
 
-    margin-top: $baseline * 6
+    margin-top: $baseline * 4
     margin-bottom: $baseline
 
     p

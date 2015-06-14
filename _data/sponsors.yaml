@@ -1,3 +1,7 @@
+- sponsor: PPD
+  logo: ppd.jpg
+  link: http://www.ppdi.com/
+
 - sponsor: Cheffins
   logo: cheffins.gif
   link: http://cheffins.co.uk
@@ -6,14 +10,9 @@
   logo: hawthorn.jpg
   link: http://www.hawthorns.uk.com/
 
-- sponsor: Acorn Garage
-
 - sponsor: Cambridge Water
   logo: cambridge-water.png
   link: http://www.cambridge-water.co.uk/
-
-- sponsor: FAST Sports Massage
-  link: http://www.fitagainsportstherapy.com
 
 - sponsor: GetFruity
   logo: getfruity.png
@@ -27,6 +26,7 @@
   logo: twi.jpg
   link: http://www.twi-global.com/
 
-- sponsor: PPD
-  logo: ppd.jpg
-  link: http://www.ppdi.com/
+- sponsor: FAST Sports Massage
+  link: http://www.fitagainsportstherapy.com
+
+- sponsor: Acorn Garage

@@ -15,7 +15,7 @@ sort: 100
       {% if sponsor.logo %}
         <img class="sponsor-logo" src="/images/sponsors/{{ sponsor.logo }}" alt="Sponsor Logo" />
       {% else %}
-        {{ sponsor.sponsor }}
+        <p>{{ sponsor.sponsor }}</p>
       {% endif %}
       {% if sponsor.link %}</a>{% endif %}
     </div>
