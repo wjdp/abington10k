@@ -24,6 +24,6 @@ This year's race will be the **11th Abington 10k &amp; Fun Run**.
 
 ### Chip Timing
 
-New this year we are introducing chip timing.
+New this year we are introducing chip timing provided by Swift Timing.
 
 </div>
