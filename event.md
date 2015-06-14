@@ -8,7 +8,7 @@ published: true
 
 <div class="col-2-3" markdown="1">
 
-The Abington 10k & Fun Run is a yearly event organised by <span class="extra" title="Registered Charity No. 1136090">Great Abington Primary School PTFA</span> to raise funds for Great Abington Primary School
+The Abington 10k & Fun Run is a yearly running event organised by Great Abington Primary School PTFA (Registered Charity No. 1136090) to raise funds for Great Abington Primary School
 
 The start and finish lines are located in the grounds of Granta Park, easily accessible by road and with plenty of parking.
 
