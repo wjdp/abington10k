@@ -12,7 +12,7 @@ The Abington 10k &amp; Fun Run is a yearly running event organised by [Great Abi
 
 The start and finish lines are located in the grounds of Granta Park, easily accessible by road and with plenty of parking.
 
-The 10k route takes you around the picturesque villages of [Little and Great Abington](http://www.theabingtons.org.uk/). Two water stations will be running along the route.
+The 10k route takes you around the picturesque villages of [Little and Great Abington](http://www.theabingtons.org.uk/). Two water stations will be in operation along the route.
 
 The 2k Fun Run is entirely within the grounds of Granta Park, totally traffic free!
 
