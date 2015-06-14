@@ -10,10 +10,11 @@ a.site-title
   display: block
   color: $color-brand
   margin-top: $baseline
+  max-width: 200px
   img
     width: 100%
   @include respond-down(mob-land)
-    max-width: 200px
+
     margin-bottom: $baseline
     margin-left: auto
     margin-right: auto
@@ -33,7 +34,7 @@ a.site-sponsor
     margin-right: auto
 
   @include respond-up(tab-port)
-    float: left
+    float: right
 
   p
     margin-bottom: $baseline / 2
