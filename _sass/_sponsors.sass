@@ -4,18 +4,27 @@
   .sponsor-single
     @include grid-x-percent(33.3333333333%)
 
+    @include respond-down(mob-land)
+      width: 50%
+      float: left
+      &:nth-child(2n+1)
+        clear: left
+
+    @include respond-up(tab-port)
+      &:nth-child(3n+1)
+        clear: left
+
     .inner
       // background: #C4F6A8
       padding: $baseline
-      margin-bottom: $baseline
+      margin-bottom: $baseline / 2
       text-align: center
 
-    &:nth-child(3n+1)
-      clear: left
+
 
     img
       max-height: 100px
-      max-width: 200px
+      max-width: 100%
 
     p
       margin-top: $baseline

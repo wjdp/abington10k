@@ -7,23 +7,33 @@
     margin-bottom: 0 !important
 
 a.site-title
-  float: left
-
-  max-width: 200px
   display: block
   color: $color-brand
   margin-top: $baseline
   img
     width: 100%
   @include respond-down(mob-land)
-    text-align: center
+    max-width: 200px
+    margin-bottom: $baseline
+    margin-left: auto
+    margin-right: auto
+
+  @include respond-up(tab-port)
+    float: left
 
 a.site-sponsor
-  float: right
   display: block
   background: #fff
   max-width: 240px
   padding: $baseline / 2 $baseline
+
+  @include respond-down(mob-land)
+    max-width: 240px
+    margin-left: auto
+    margin-right: auto
+
+  @include respond-up(tab-port)
+    float: left
 
   p
     margin-bottom: $baseline / 2
