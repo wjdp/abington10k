@@ -1,0 +1,41 @@
+#registration
+
+
+.registration-tag
+  float: right
+  background: $color-grey
+  padding: 8px 16px
+  color: #fff
+  font-weight: bold
+
+  font-size: $base-font-size * 1.8
+
+.registration-open
+  background: #4EAB20
+
+.registration-closed
+  background: #CC3820
+
+
+.registration-link
+
+  @include respond-up(mob-land)
+    width: 33.333%
+    float: left
+
+    @include all-but-last(padding-right, $base-font-size)
+
+  a
+    font-size: $base-font-size * 1.3
+    padding: $baseline
+    display: block
+    background: $color-brand
+    color: $color-text-white
+
+    &:hover
+      text-decoration: underline
+
+
+.registration-link-postal a
+  background: $color-brand-alt
+  color: $color-text-black
