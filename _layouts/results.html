@@ -2,4 +2,13 @@
 layout: default
 ---
 
+{% assign results_pages = site.pages | where: "layout", "results" %}
+<ul class="results-pages">
+{% for page in results_pages %}
+  <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+{% endfor %}
+</ul>
+
+<h1>{{ page.title }}</h1>
+
 {{ content }}

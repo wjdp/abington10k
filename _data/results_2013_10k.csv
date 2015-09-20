@@ -1,4 +1,4 @@
-place,number,first,last,club,time,category,cup,category_position
+place,number,first,last,club,time,category,category_position,cup,cup_position
 1,785,SULLIVAN,SMITH,CAMBRIDGE & COLERIDGE AC,00:32:21,M,1 / 75,GM,1 / 20
 2,708,DENYS,OLEFIR,NEWMARKET JOGGERS,00:34:15,M,2 / 75,,
 3,506,ISTVAN,JACSO,CAMBRIDGE & COLERIDGE AC,00:35:15,M,3 / 75,,
