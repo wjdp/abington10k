@@ -1,0 +1,62 @@
+.results-page
+  @include grid-row
+  margin-top: $baseline
+
+.results-nav
+  @include grid-x-col(3)
+  ul
+    @include list-unformatted
+
+    li
+      background: $color-grey-light
+      margin-bottom: $baseline / 2
+
+      a
+        display: block
+        color: $color-text-white
+        padding: $baseline / 2
+
+        &.current
+          background: $color-brand
+
+        &:hover
+          color: $color-text-black
+          background: $color-brand-alt
+
+
+.results-content
+  @include grid-x-col(9)
+
+table.results
+  @include block
+  width: 100%
+  border-collapse: collapse
+
+
+  th
+    font-size: 2em
+    color: $color-text-white
+    padding: $baseline / 2
+
+    background: $color-brand
+    &.extra
+      background: darken($color-brand, 10%)
+
+    .extra-time
+      font-weight: 900
+
+  tr
+    &:nth-of-type(odd)
+      background: darken($color-background, 3%)
+
+  td
+    padding: $baseline / 2  2px
+
+  .place
+    font-weight: bold
+
+  .extra-start
+    padding-left: $baseline / 2
+
+  tbody
+    height: 300px

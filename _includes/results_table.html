@@ -1,10 +1,44 @@
 <table class="results">
+<thead>
+<tr>
+  <th>
+    <i title="Place" class="ion-ribbon-a"></i>
+  </th>
+  <th>
+    <i title="Name" class="ion-person"></i>
+  </th>
+  <th>
+    <i title="Club" class="ion-person-stalker"></i>
+  </th>
+  <th>
+    <i title="Time" class="ion-android-alarm-clock"></i>
+  </th>
+  <th class="extra-start extra">
+    <i title="Category" class="ion-android-list"></i>
+  </th>
+  <th class="extra extra-time">
+    <i title="Category Position" class="ion-ribbon-b"></i>
+  </th>
+  <th class="extra">
+    <i title="Cup" class="ion-trophy"></i>
+  </th>
+  <th class="extra extra-time">
+    <i title="Cup Position" class="ion-ribbon-b"></i>
+  </th>
+</tr>
+</thead>
+<tbody>
 {% for result in results %}
 <tr>
-  <td>{{ result.place }}</td>
+  <td class="place">{{ result.place }}</td>
   <td>{{ result.first | capitalize }} {{ result.last | capitalize }}</td>
   <td>{{ result.club | downcase | capitalize }}</td>
   <td>{{ result.time }}</td>
+  <td class="extra-start">{{ result.category }}</td>
+  <td>{{ result.category_position }}</td>
+  <td>{{ result.cup }}</td>
+  <td>{{ result.cup_position }}</td>
 </tr>
 {% endfor %}
+</tbody>
 </table>

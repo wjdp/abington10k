@@ -2,13 +2,17 @@
 layout: default
 ---
 
-{% assign results_pages = site.pages | where: "layout", "results" %}
-<ul class="results-pages">
-{% for page in results_pages %}
-  <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-{% endfor %}
-</ul>
+<div class="results-page">
+  <nav class="results-nav">
+    {% assign results_pages = site.pages | where: "layout", "results" %}
+    <ul class="results-pages">
+    {% for item in results_pages %}
+      <li><a {% if item.url==page.url %}class="current"{% endif %} href="{{ item.url }}">{{ item.title }}</a></li>
+    {% endfor %}
+    </ul>
+  </nav>
 
-<h1>{{ page.title }}</h1>
-
-{{ content }}
+  <section class="results-content">
+    {{ content }}
+  </section>
+</div>
