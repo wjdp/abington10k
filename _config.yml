@@ -9,3 +9,4 @@ twitter_username: abington10k
 
 # Build settings
 markdown: kramdown
+permalink: pretty
