@@ -7,7 +7,7 @@ layout: default
     {% assign results_pages = site.pages | where: "layout", "results" %}
     <ul class="results-pages">
     {% for item in results_pages %}
-      <li><a {% if item.path == page.path %}class="current"{% endif %} href="{{ item.url }}">{{ item.title }}</a></li>
+      <li><a {% if item.url == page.url %}class="current"{% endif %} href="{{ item.url }}">{{ item.title }}</a></li>
     {% endfor %}
     </ul>
   </nav>
