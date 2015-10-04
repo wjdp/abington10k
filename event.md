@@ -32,7 +32,7 @@ New this year we are introducing chip timing provided by Swift Timing.
 
 You can find results from Abington 10k & Fun 2015 here:
 
-(http://www.swifttiming.co.uk/)
+[Results 2015](http://www.swifttiming.co.uk/)
 
 
 </div>
