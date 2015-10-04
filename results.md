@@ -7,7 +7,7 @@ sort: 40
 
 ## Race Results
 
-      [Results 2015](http://www.swifttiming.co.uk/)
+[Results 2015](http://www.swifttiming.co.uk/)
 
 {% assign results_pages = site.pages | where: "layout", "results" %}
 <ul class="results-pages">
