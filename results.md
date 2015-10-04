@@ -7,7 +7,7 @@ sort: 40
 
 ## Race Results
 
-Results will be available shortly after the race. Records for 2013-14 10K and Fun Runs to be added shortly.
+ [Results 2015](http://www.swifttiming.co.uk/)
 
 {% assign results_pages = site.pages | where: "layout", "results" %}
 <ul class="results-pages">
