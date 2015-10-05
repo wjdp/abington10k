@@ -5,7 +5,7 @@ sort: 20
 published: true
 ---
 
-<div class="registration-tag registration-open">OPEN</div>
+
 
 ## Runner Registration
 
