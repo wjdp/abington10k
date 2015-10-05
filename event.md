@@ -35,6 +35,5 @@ You can find results from Abington 10k & Fun 2015 here:
 
 [Results 2015](http://www.swifttiming.co.uk/)
 
-[Photos 2015](https://t.co/aHf3qowbR0/)  Courtesy of Jonathan Warren
 
 </div>
