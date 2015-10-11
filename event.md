@@ -16,7 +16,7 @@ The 10k route takes you around the picturesque villages of [Little and Great Abi
 
 The 2k Fun Run is entirely within the grounds of Granta Park, totally traffic free!
 
-This year's race will be the **11th Abington 10k &amp; Fun Run**.
+Next year's race will be the **12th Abington 10k &amp; Fun Run**.
 
 <div class="registration-link registration-link-online">
   <a href="/assets/race_day_info.pdf">Race Day Info</a>
