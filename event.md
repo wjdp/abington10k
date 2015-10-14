@@ -18,9 +18,7 @@ The 2k Fun Run is entirely within the grounds of Granta Park, totally traffic fr
 
 Next year's race will be the **12th Abington 10k &amp; Fun Run**.
 
-<div class="registration-link registration-link-online">
-  <a href="/assets/race_day_info.pdf">Race Day Info</a>
-</div>
+
 
 </div>
 
